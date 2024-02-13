@@ -75,15 +75,44 @@ header{
 }
 
 
-.slider{
+.slider {
+    -webkit-appearance: none;
     width: 100%;
-    /* appearance: none; */
-    background: #67db80;
+    height: 15px;
+    border-radius: 5px;
+    background: #18171F;
     outline: none;
-    border-radius: 12.5px;
+    opacity: 0.8;
     -webkit-transition: .2s;
     transition: opacity .2s;
-}
+  }
+  
+  /* .slider:hover {
+    opacity: 1;
+  } */
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background:#E6E5EA;
+    cursor: pointer;
+  }
+
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+  }
+
+
+
+
 .checkboxs{
     display: flex;
     gap: 15px;
