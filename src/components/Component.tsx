@@ -1,9 +1,8 @@
 import { useState } from "react";
 import "./Component.css";
-// import styled from "styled-components";
 
 function Component() {
-  const [value, setValue] = useState<number>(10);
+  const [value, setValue] = useState<number>(12);
   const [result, setResult] = useState<string>("");
   const [upperCaseChecked, setUpperCaseChecked] = useState<boolean>(false);
   const [lowerCaseChecked, setLowerCaseChecked] = useState<boolean>(false);
@@ -90,7 +89,7 @@ function Component() {
           <form>
             <input
               type="range"
-              min="4"
+              min="8"
               max="16"
               className="slider"
               value={value}
