@@ -1,0 +1,194 @@
+body{
+    background: linear-gradient(180deg, #14131B 0%, #08070B 100%);
+    min-height: 100vh;
+    font-family: "JetBrains Mono";
+}
+
+header{
+    color: #817D92;
+    text-align: center;
+    font-family: "JetBrains Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 64px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.top-col{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 16px;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    flex-shrink: 0;
+    background: var(--Dark-Grey, #24232C);
+}
+.top-col p{
+    color: var(--Almost-White, #E6E5EA);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "JetBrains Mono";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;    
+}
+
+.bottom-col{
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 16px;
+    background: var(--Dark-Grey, #24232C);
+}
+    
+.length{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 21px;
+    padding-bottom: 23px;
+}
+.length p{
+    color: var(--Almost-White, #E6E5EA);
+    font-family: "JetBrains Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.length span{
+    color: var(--Neon-Green, #A4FFAF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "JetBrains Mono";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.slider{
+    width: 100%;
+    /* appearance: none; */
+    background: #67db80;
+    outline: none;
+    border-radius: 12.5px;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.checkboxs{
+    display: flex;
+    gap: 15px;
+    margin: 16px 0;
+}
+.checkboxs p{
+    color: var(--Almost-White, #E6E5EA);
+    font-family: "JetBrains Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.checkbox{
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    border: 2px solid var(--Almost-White, #E6E5EA);
+}
+
+.strength{
+    width: 100%;
+    height: 56px;
+    background: #18171F;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+.strength p {
+    color: var(--Grey, #817D92);
+    text-align: center;
+    font-family: "JetBrains Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.strength span{
+    padding-right: 10px;
+    color: var(--Almost-White, #E6E5EA);
+    text-align: right;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "JetBrains Mono";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.boxes{
+    width: 10px;
+    height: 28px;
+    flex-shrink: 0;
+    border: 2px solid var(--Almost-White, #E6E5EA);
+}
+.red{
+    width: 10px;
+    height: 28px;
+    flex-shrink: 0;
+    background: var(--1---Red, #F64A4A);
+}
+.orange{
+    width: 10px;
+    height: 28px;
+    flex-shrink: 0;
+    background: var(--2---Orange, #FB7C58);
+}
+.yellow{
+    width: 10px;
+    height: 28px;
+    flex-shrink: 0;
+    background: var(--3---Yellow, #F8CD65);
+}
+.green{
+    width: 10px;
+    height: 28px;
+    flex-shrink: 0;
+    background: var(--Neon-Green, #A4FFAF);
+}
+button{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 100%;
+    height: 56px;
+    flex-shrink: 0;
+    background: var(--Neon-Green, #A4FFAF);
+    border: 0px;
+    color: var(--Dark-Grey, #24232C);
+    text-align: center;
+    font-family: "JetBrains Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+button:hover{
+    background-color: transparent;
+    color: #67db80;
+    border: 1px solid #67db80 ;
+}
+
+@media only screen and (min-width: 768px){
+    .container{
+        width: 70%;
+        max-width: 540px;
+        margin: 0 auto;
+        padding-top: 100px;
+    }
+}
